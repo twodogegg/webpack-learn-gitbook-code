@@ -1,23 +1,16 @@
 {
   "name": "webpack-learn-gitbook-code",
   "version": "1.0.0",
-  "description": "gitbook-webpack教程里面的演示代码",
+  "description": "webpack教程 示例代码",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/twodogegg/webpack-learn-gitbook-code.git"
-  },
-  "keywords": [
-    "webpack",
-    "webpack 教程"
-  ],
-  "author": "twodogegg",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/twodogegg/webpack-learn-gitbook-code/issues"
-  },
-  "homepage": "https://github.com/twodogegg/webpack-learn-gitbook-code#readme"
+  "repository": "git@github.com:twodogegg/webpack-learn-gitbook-code.git",
+  "author": "twodogegg <971270272@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
