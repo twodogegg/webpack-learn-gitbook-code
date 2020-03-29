@@ -1,7 +1,18 @@
 module.exports = {
-  entry: "./src/main",
+  entry: ["./src/main"],
   output: {
     filename: "bundle.js"
   },
-  mode: "development"
+  mode: "development",
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          "css-loader"
+        ]
+      }
+    ]
+  }
 }
